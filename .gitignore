@@ -13,5 +13,4 @@ logs/
 .cache/
 
 # Database config and fake data
-db.config.js
 fakedb.js
