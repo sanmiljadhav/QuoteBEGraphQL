@@ -1,0 +1,17 @@
+# Node dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Package lock file (optional)
+package-lock.json
+
+# Logs and cache
+*.log
+logs/
+.cache/
+
+# Database config and fake data
+db.config.js
+fakedb.js
