@@ -51,7 +51,10 @@ const server = new ApolloServer({
 })
 
 
-server.listen({ port: PORT }).then(({ url }) => {
+server.listen({ port: PORT,cors: {
+    origin: ['http://localhost:3000', 'https://quote-fe-react.vercel.app'], // allow both origins
+    credentials: true,
+  } }).then(({ url }) => {
 console.log(`🚀 Server ready at ${url}`);
 });
 
